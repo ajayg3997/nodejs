@@ -7,7 +7,6 @@ const productRoutes = require('./routes/product');
 const userRoutes = require('./routes/user');
 const restaurantRoutes = require('./routes/restaurant');
 // SQL Routers
-const restRoutes = require('./routes/restaurant2');
 
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -49,7 +48,6 @@ app.use('/user', userRoutes);
 app.use('/admin', restaurantRoutes);
 
 // My SQL  Routes
-app.use('/resturant', restRoutes);
 
 app.use((req, res, next) => {
     const error = new Error('Not found');
